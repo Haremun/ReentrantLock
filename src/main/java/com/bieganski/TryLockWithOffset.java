@@ -21,6 +21,7 @@ public class TryLockWithOffset implements Runnable {
   }
 
   private void doAction() throws InterruptedException {
+    //Lock waits some time for lock
     reentrantLock.tryLock(1000, TimeUnit.MILLISECONDS);
     if (reentrantLock.isHeldByCurrentThread()) {
       try {

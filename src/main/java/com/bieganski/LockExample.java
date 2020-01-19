@@ -4,9 +4,15 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class LockExample implements Runnable {
   private ReentrantLock reentrantLock;
+  private int sleepTime = 1000;
 
   LockExample(ReentrantLock reentrantLock) {
     this.reentrantLock = reentrantLock;
+  }
+
+  LockExample(ReentrantLock reentrantLock, int sleepTime) {
+    this.reentrantLock = reentrantLock;
+    this.sleepTime = sleepTime;
   }
 
   @Override
@@ -23,7 +29,7 @@ public class LockExample implements Runnable {
   private void doAction(String msg) {
     try {
       System.out.println(Thread.currentThread().getName() + ": " + msg);
-      Thread.sleep(1000);
+      Thread.sleep(sleepTime);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
