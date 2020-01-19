@@ -59,7 +59,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.bieganski.reentrant_lock.App</mainClass>
+                <mainClass>com.bieganski.App</mainClass>
               </manifest>
             </archive>
           </configuration>

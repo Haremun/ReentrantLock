@@ -1,4 +1,4 @@
-package com.bieganski.reentrant_lock;
+package com.bieganski;
 
 import org.testng.annotations.Test;
 
