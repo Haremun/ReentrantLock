@@ -1,0 +1,10 @@
+Title: ReentrantLock
+Author: Kamil Bieganski
+Version: 0.1
+
+To run project you have to use:
+- bash or other compatible unix shell
+- jdk version openjdk 11.0.5 2019-10-15
+- maven version 
+
+To build project simply run "mvn package" command, to make it work run "java -cp target/ReentrantLock-0.1.jar com.bieganski.ReentrantLock"
